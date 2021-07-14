@@ -4,7 +4,7 @@ set -eu
 /setup-ssh.sh
 
 export GIT_SSH_COMMAND="ssh -v -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no -l $INPUT_SSH_USERNAME"
-su centos
+cat /etc/passwd
 cd "$INPUT_PATH"
 git fetch
 git checkout develop
