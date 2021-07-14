@@ -16,3 +16,4 @@ git checkout master
 git push mirror master
 git checkout feature-testing
 git push mirror feature-testing
+git remote remove mirror
